@@ -1,0 +1,164 @@
+.container {
+  max-width: $max-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Text Styles
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-center {
+  text-align: center;
+}
+// Backgrounds
+.bg {
+  &-primary {
+    @include set-background($primary);
+  }
+  &-light {
+    @include set-background($light);
+  }
+  &-dark {
+    @include set-background($dark);
+    border: 1px solid #ccc;
+  }
+  &-success {
+    @include set-background($success);
+  }
+  &-danger {
+    @include set-background($danger);
+  }
+  &-white {
+    @include set-background(#fff);
+    border: 1px solid #ccc;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  background: $light;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+
+  &.btn-primary {
+    @include set-background($primary);
+    &:hover {
+      background: lighten($primary, 5%);
+    }
+  }
+  &.btn-dark {
+    @include set-background($dark);
+    &:hover {
+      background: lighten($dark, 5%);
+    }
+  }
+  &.btn-success {
+    @include set-background($success);
+    &:hover {
+      background: lighten($success, 5%);
+    }
+  }
+  &.btn-danger {
+    @include set-background($danger);
+    &:hover {
+      background: lighten($danger, 5%);
+    }
+  }
+  &:hover {
+    background: lighten($dark, 20%);
+    color: #fff;
+  }
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+
+  &.alert-primary {
+    @include set-background($primary);
+  }
+  &.alert-success {
+    @include set-background($success);
+  }
+  &.alert-danger {
+    @include set-background($danger);
+  }
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $light;
+
+  &.badge-primary {
+    @include set-background($primary);
+  }
+
+  &.badge-dark {
+    @include set-background($dark);
+  }
+
+  &.badge-success {
+    @include set-background($success);
+  }
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.table {
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+  }
+  th {
+    background: $light;
+  }
+}
