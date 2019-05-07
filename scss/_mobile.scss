@@ -8,7 +8,7 @@
   }
 
   .x-large {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .large {
@@ -34,9 +34,13 @@
     }
   }
 
-  .landing form .text-input {
-    width: 100%;
-    margin-bottom: 0.5rem;
+  .landing .landing-inner form .text-fields {
+    display: block;
+
+    input {
+      width: 100%;
+      margin-bottom: 5px;
+    }
   }
 
   .dash-buttons a {

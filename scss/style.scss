@@ -12,7 +12,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #f1f8ff;
   color: #303030;
 }
 
@@ -66,8 +66,6 @@ img {
 
 // Landing
 .landing {
-  position: relative;
-  background: url('../img/triangles.jpg') no-repeat center center/cover;
   height: 100vh;
 
   &-inner {
@@ -88,6 +86,10 @@ img {
       }
 
       form {
+        .text-fields {
+          display: flex;
+          justify-content: center;
+        }
         .text-input {
           padding: 0.5rem;
         }
